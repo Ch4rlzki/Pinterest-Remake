@@ -1,0 +1,101 @@
+:root {
+    --font-color: #211922;
+}
+body {
+    color: #211922;
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+li.nav-item button.btn {
+    background-color: #fff;
+    border-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+li.nav-item button.btn:hover {
+    background-color: #f0f0f0;
+    border-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+li.nav-item button.btn:active {
+    background-color: #e0e0e0;
+    border-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+li.nav-item a.dropdown-item {
+    font-weight: 600;
+    background-color: #fff;
+    border-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+li.nav-item a.dropdown-item:hover {
+    background-color: #f0f0f0;
+    border-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+li.nav-item a.dropdown-item:active {
+    background-color: #e0e0e0;
+    border-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+div.input-group svg {
+    z-index: 1;
+}
+div.input-group input {
+    background-color: transparent;
+}
+header div.first {
+    min-height: 72px;
+    background-color: #fff;
+}
+header div.second {
+    height: 64px;
+    background-color: #fff;
+}
+header div.second p.custom-p {
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+}
+header div.second p.custom-p::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 2rem;
+    background-color: #111;
+    transform-origin: bottom left;
+}
+
+main {
+    margin-top: 9rem;
+    background-color: #fff;
+
+    @media (max-width: 426px) {
+        margin-top: 11.5rem;
+    }
+}
+div.grid-container {
+    max-width: 1600px;
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+div.grid-container div.grid div.grid-item {
+    padding: 2px;
+}
+div.grid-container div.grid div.grid-item img {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+}
